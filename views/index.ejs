@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+  <body>
+    <%- include("./partials/nav.ejs") %>
+
+    <h1>Asosiy sahifa</h1>
+    <ol>
+      <% uPosts.forEach((post) => { %>
+      <li>
+        <a href="/post/<%= post.id %>"
+          ><%=post.title %> - <%=post.title %>
+        </a>
+      </li>
+      <% }) %>
+    </ol>
+    <img src="/R.png" alt="R">
+  </body>
+</html>
